@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association</title>
+    <link rel="stylesheet" href="alumni.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-title">Alumni Association</h1>
+            </div>
+        </header>
+        <main>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="home">Home</button>
+                <button class="tab-button" data-tab="personal">Personal Page</button>
+                <button class="tab-button" data-tab="internships">Internships</button>
+                <button class="tab-button" data-tab="events">Events</button>
+                <button class="tab-button" data-tab="events">Competitions</button>
+            </div>
+            <div id="home" class="tab-content active">
+                <h2 class="section-title">Community Posts</h2>
+                <div id="posts-container"></div>
+            </div>
+            <div id="personal" class="tab-content">
+                <h2 class="section-title">Personal Page</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">John Doe</h3>
+                        <p class="card-description">Software Engineer</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="profile-header">
+                            <div class="avatar">JD</div>
+                            <div>
+                                <h3 class="profile-name">John Doe</h3>
+                                <p class="profile-job">Software Engineer at Tech Corp</p>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <h4>Education</h4>
+                            <p>B.S. in Computer Science, University of Example, 2018-2022</p>
+                            <h4>Experience</h4>
+                            <p>Software Engineering Intern, Tech Corp, Summer 2021</p>
+                            <h4>Skills</h4>
+                            <p>JavaScript, React, Node.js, Python</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button">Edit Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div id="internships" class="tab-content">
+                <h2 class="section-title">Internship Opportunities</h2>
+                <div id="internships-container"></div>
+            </div>
+            <div id="events" class="tab-content">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div id="events-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="alumni.js"></script>
+</body>
+</html>
